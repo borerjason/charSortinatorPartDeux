@@ -1,11 +1,6 @@
 const router = require('express').Router();
+const reverse = require('../actions')
 
-const charSort = require('../helpers/CharSort');
-
-router.post('/reverse', (req, res) => {
-  let word = req.body.word;
-  let sorted = charSort(word);
-  res.send(200, sorted); 
-});
+router.post('/reverse', reverse.post);
 
 module.exports = router;

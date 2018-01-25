@@ -1,9 +1,7 @@
-const charSort = word => (
-  word
+const charSort = string => (
+  string
     .split('')
-    .sort((a,b) => (
-      b < a ? 1 : -1 
-    ))
+    .sort((a,b) => (a < b))
     .join('')
 );
 
