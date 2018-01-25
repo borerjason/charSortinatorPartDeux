@@ -2,17 +2,19 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-      <link rel="stylesheet" href="main.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="main.css">
   </head>
   <body>
     <div class="container">
-      <div class="form-container">
-        <form id="form-input">
-          Enter String: <input id="word" type="text" placeholder="" value=""></input>
-          <button id="send-data" type="submit">Submit</button>
-        </form>
-      </div>
+      <form class="form-inline">
+  
+          <input id="word" class="form-control" type="text" placeholder="Enter string..." value=""></input>
+          <button class="btn btn-primary" type="submit">Submit</button>
+      
+      </form>
       <div>
         <table class="words">
           <tr>
