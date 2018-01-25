@@ -1,6 +1,6 @@
 const router = require('express').Router();
-const reverse = require('../actions');
+const sort = require('../actions');
 
-router.post('/reverse', reverse.post);
+router.post('/sort', sort.post);
 
 module.exports = router;
