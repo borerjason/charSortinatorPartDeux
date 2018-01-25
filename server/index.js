@@ -7,9 +7,7 @@ const app = express();
 app.use(express.static(path.join(__dirname, "../client/public" )));
 app.use(bodyParser.json());
 
-app.post('/reverse', (req, res) => {
-  let word = req
-})
+app.use(require('./routes'))
 
 const PORT = process.env.PORT || 8080;
 
