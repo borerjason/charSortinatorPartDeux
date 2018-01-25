@@ -1,7 +1,7 @@
 const charSort = string => (
   string
     .split('')
-    .sort((a,b) => (a < b))
+    .sort((a, b) => (a < b))
     .join('')
 );
 
